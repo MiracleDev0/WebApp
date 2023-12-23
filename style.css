@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgba(46, 196, 182, 0.04);
+}
+main{
+    display: flex;
+    padding-inline: 141px;
+    padding-top: 81px;
+    justify-content: space-between;
+    /* width: 1440px; */
+    height: 840px;
+}
+form{
+    border-radius: 6px;
+    width: 580px;
+    height: 679px;
+    background: #FFF;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    padding: 40px;
+}
+.second{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    grid-row-gap: 16px;
+}
+input,select{
+    height: 48px;
+    padding-left: 16px;
+    padding-block: 14px;
+}
+.second>input{
+    width: 238px;
+}
+.second>div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.div{
+    display: flex;
+    flex-direction: column;
+
+}
+.third{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding-left: 40px;
+}
+button{
+    width: 460px;
+    height: 48px;
+    color: var(--basic-100, #FFF);
+    text-align: center;
+    font-family: Sofia Pro;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    background-color: var(--cl-green, #2EC4B6);
+    border: none;
+    padding-right: 10px;
+
+}
+svg{
+    width: 77.333px;
+    height: 80px;
+}
+#activityLevel{
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+h1{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    color: var(--cl-black, #000B0A);
+    font-family: 'Brown';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -0.8px;
+}
+section h1 + p{
+    /* width: 460px;
+    height: 75px; */
+    color: var(--cl-grey, #737373);
+    font-family: Brown;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* padding-bottom: 555px; */
+}
+section button + p{
+    /* width: 463px; */
+    height: 25px;
+    color: #000;
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    padding-left: 18px;
+    padding-bottom: 40px;
+}
+a{
+    color: var(--cl-green, #2EC4B6);
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration-line: underline;
+}
+label{
+    color: var(--text-headings, #011C34);
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.1px;
+}
+::placeholder{
+    color: var(--cl-grey, #737373);
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.2px;
+    }
+    #svg{
+        padding-top: 105px;
+    }
+@media screen and (max-width: 768px){
+    main{
+        flex-direction: column;
+        padding-inline: 10px;
+        padding-top: 1rem;
+    }
+    main>section:first-child{
+        height: fit-content;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .third{
+        padding-left: 0;
+    }
+    svg{
+        width: 38.667px;
+        height: 40px;
+        
+    }
+    #svg{
+        padding-top: 0;
+    }
+    section h1 + p{
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 25px;
+    }
+    form{
+        width: fit-content;
+    }
+    .second>input{
+        width: 100%;
+    }
+  
+    .second{
+        grid-template-columns: auto;
+        justify-content: space-between;
+        grid-template-columns: 1fr;
+    }
+    form{
+        height: fit-content;
+    }
+    .second > div{
+        width: 100%;
+    }
+    button{
+        width: 100%;
+    }
+    input,select{
+        height: 48px;
+        padding-left: 0;
+        padding-block: 14px;
+    }
+}
